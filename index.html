@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyle Georges — Digital Strategist & Creative Director</title>
+    <meta
+      name="description"
+      content="Kyle Georges is a digital strategist and creative director specializing in content systems, marketing automation, and AI-assisted creative workflows."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="nav-inner">
+        <a href="#top" class="logo">Kyle Georges</a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#work">Work</a>
+          <a href="#case-studies">Case Studies</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="#resume" class="btn btn-small">Résumé</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="hero-inner reveal">
+          <p class="eyebrow">Digital Strategist · Creative Director</p>
+          <h1>Kyle Georges</h1>
+          <p class="hero-sub">
+            I build marketing systems where content, automation, and data work
+            together — so brands grow without the busywork.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">View My Work</a>
+            <a href="#resume" class="btn btn-secondary">Download Résumé</a>
+          </div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true"><span></span></div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-grid">
+          <div class="about-portrait reveal">
+            <img
+              alt="Kyle Georges"
+              class="portrait-img"
+              src="data:image/jpeg;base64,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"
+            />
+          </div>
+          <div class="about-copy reveal">
+            <p class="section-eyebrow">About</p>
+            <h2>Founder-minded, systems-obsessed.</h2>
+            <p>
+              I'm the Founder &amp; Creative Director of
+              <strong>Curate Media LLC</strong>, where I've spent the last five
+              years helping brands turn scattered marketing efforts into
+              repeatable, measurable systems. My background in business
+              management shapes how I think — every creative decision is tied
+              back to a goal, a workflow, and a result.
+            </p>
+            <p>
+              Lately I've been expanding into the technical side of marketing:
+              learning JavaScript, HTML, and CSS, deepening my analytics fluency
+              with Google Analytics 4, and exploring how AI tools like the
+              Claude API can responsibly speed up creative work without losing a
+              brand's voice.
+            </p>
+            <p>
+              Based in Miami, FL — open to hybrid, remote, and
+              freelance-to-full-time opportunities.
+            </p>
+            <div class="kpi-row">
+              <div class="kpi" data-count="5" data-suffix="+">
+                <span class="kpi-number">0</span>
+                <span class="kpi-label">Years Leading Curate Media</span>
+              </div>
+              <div class="kpi" data-count="3" data-suffix="">
+                <span class="kpi-number">0</span>
+                <span class="kpi-label"
+                  >Credentials Earned &amp; In Progress</span
+                >
+              </div>
+              <div class="kpi" data-count="2" data-suffix="">
+                <span class="kpi-number">0</span>
+                <span class="kpi-label">Work Modes: Hybrid &amp; Remote</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="container">
+          <p class="section-eyebrow center">Skills</p>
+          <h2 class="center">Tools I use to make marketing measurable.</h2>
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <div class="skill-top">
+                <span class="skill-name">Canva</span
+                ><span class="skill-level">Expert - 5 yrs</span>
+              </div>
+              <div class="skill-bar"><span data-level="95"></span></div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-top">
+                <span class="skill-name">DJI Ronin-SC2</span
+                ><span class="skill-level">Advanced - 5 yrs</span>
+              </div>
+              <div class="skill-bar"><span data-level="80"></span></div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-top">
+                <span class="skill-name">Sony A7RII</span
+                ><span class="skill-level">Advanced - 5 yrs</span>
+              </div>
+              <div class="skill-bar"><span data-level="80"></span></div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-top">
+                <span class="skill-name">Metricool</span
+                ><span class="skill-level">In Active Use</span>
+              </div>
+              <div class="skill-bar"><span data-level="75"></span></div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-top">
+                <span class="skill-name">Claude API (Anthropic)</span
+                ><span class="skill-level">Skilled - 2 yrs</span>
+              </div>
+              <div class="skill-bar"><span data-level="65"></span></div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-top">
+                <span class="skill-name">Google Analytics 4</span
+                ><span class="skill-level">Certification In Progress</span>
+              </div>
+              <div class="skill-bar"><span data-level="55"></span></div>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-top">
+                <span class="skill-name">JavaScript, HTML &amp; CSS</span
+                ><span class="skill-level">Certified 2025</span>
+              </div>
+              <div class="skill-bar"><span data-level="100"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="work">
+        <div class="container">
+          <p class="section-eyebrow center">Featured Work</p>
+          <h2 class="center">Systems built to make marketing scale.</h2>
+          <div class="work-grid">
+            <article class="work-card reveal">
+              <div class="work-card-media media-1"></div>
+              <div class="work-card-body">
+                <h3>Content Systems &amp; Automation</h3>
+                <p>
+                  Turning repetitive content operations at Curate Media LLC into
+                  scheduled, repeatable workflows.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Metricool</span
+                  ><span class="tag">Claude API</span>
+                </div>
+                <a href="#case-study-1" class="text-link"
+                  >View Case Study -&gt;</a
+                >
+              </div>
+            </article>
+            <article class="work-card reveal">
+              <div class="work-card-media media-2"></div>
+              <div class="work-card-body">
+                <h3>Video Production Pipeline</h3>
+                <p>
+                  A standardized shoot-to-edit workflow for consistent,
+                  professional social video content.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Sony A7RII</span
+                  ><span class="tag">CapCut Pro</span>
+                </div>
+                <a href="#case-study-2" class="text-link"
+                  >View Case Study -&gt;</a
+                >
+              </div>
+            </article>
+            <article class="work-card reveal">
+              <div class="work-card-media media-3"></div>
+              <div class="work-card-body">
+                <h3>AI-Assisted Content Workflows</h3>
+                <p>
+                  Using AI tools to speed up ideation, drafting, and voice
+                  production while protecting brand voice.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Claude API</span
+                  ><span class="tag">ChatGPT</span>
+                </div>
+                <a href="#case-study-3" class="text-link"
+                  >View Case Study -&gt;</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="case-studies" id="case-studies">
+        <div class="container">
+          <p class="section-eyebrow center">Case Studies</p>
+          <h2 class="center">A closer look at how the work got done.</h2>
+          <article class="case-study reveal" id="case-study-1">
+            <div class="case-header">
+              <span class="case-number">01</span>
+              <div>
+                <h3>Content Systems &amp; Automation</h3>
+                <p class="case-tagline">
+                  Replacing manual busywork with a repeatable content system.
+                </p>
+              </div>
+            </div>
+            <div class="case-grid">
+              <div class="case-block">
+                <h4>Problem</h4>
+                <p>
+                  Content scheduling, file organization, and reporting were
+                  handled manually across scattered folders and spreadsheets,
+                  consuming hours every week that could go toward creative work.
+                </p>
+              </div>
+              <div class="case-block">
+                <h4>Goal</h4>
+                <p>
+                  Design a repeatable system that automates the administrative
+                  side of content production without limiting creative
+                  flexibility.
+                </p>
+              </div>
+              <div class="case-block">
+                <h4>My Role</h4>
+                <p>
+                  Founder &amp; Creative Director - owned strategy, workflow
+                  design, and implementation end to end.
+                </p>
+              </div>
+              <div class="case-block">
+                <h4>Technologies</h4>
+                <div class="tag-row">
+                  <span class="tag">Metricool</span
+                  ><span class="tag">Canva</span
+                  ><span class="tag">Claude API</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-narrative">
+              <h4>Process</h4>
+              <p>
+                Audited the existing manual posting and captioning workflow,
+                then paired Metricool’s scheduling and publishing tools with
+                Claude API-assisted caption drafting to keep a 90+ post/month
+                calendar running across Instagram, Facebook, and TikTok.
+              </p>
+              <h4>Challenges</h4>
+              <p>
+                This was run independently, with the client’s own operations
+                partners handling day-to-day administrative coordination -
+                keeping caption quality consistent across a high volume of
+                AI-assisted drafts, without it reading as generic, was the main
+                challenge.
+              </p>
+              <h4>Solution</h4>
+              <p>
+                Used Claude API to draft and refine captions against a
+                consistent brand voice, then scheduled and published everything
+                through Metricool - cutting per-post production time by an
+                estimated 60% without adding headcount.
+              </p>
+            </div>
+            <div class="case-outcomes">
+              <h4>Measurable Outcomes</h4>
+              <div class="outcome-grid">
+                <div
+                  class="outcome-card stat kpi reveal"
+                  data-count="60"
+                  data-suffix="%"
+                >
+                  <span class="kpi-number">0</span
+                  ><span class="outcome-label"
+                    >Estimated reduction in per-post production time using
+                    Claude API-assisted captioning</span
+                  >
+                </div>
+                <div
+                  class="outcome-card stat kpi reveal"
+                  data-count="90"
+                  data-suffix="+"
+                >
+                  <span class="kpi-number">0</span
+                  ><span class="outcome-label"
+                    >Posts per month scheduled across Instagram, Facebook &amp;
+                    TikTok</span
+                  >
+                </div>
+                <div
+                  class="outcome-card stat kpi reveal"
+                  data-count="0"
+                  data-suffix=""
+                >
+                  <span class="kpi-number">0</span
+                  ><span class="outcome-label"
+                    >Additional headcount added to run the expanded content
+                    operation</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="case-lessons">
+              <h4>Lessons Learned</h4>
+              <p>
+                AI-assisted drafting only saves time when paired with a real
+                review step - keeping a human pass in the loop kept captions
+                from reading as generic.
+              </p>
+            </div>
+          </article>
+          <article class="case-study reveal" id="case-study-2">
+            <div class="case-header">
+              <span class="case-number">02</span>
+              <div>
+                <h3>Video Production Pipeline</h3>
+                <p class="case-tagline">
+                  A standardized shoot-to-edit workflow for consistent,
+                  professional social video.
+                </p>
+              </div>
+            </div>
+            <div class="case-grid">
+              <div class="case-block">
+                <h4>Problem</h4>
+                <p>
+                  Video quality and turnaround time varied from project to
+                  project, making it hard to plan client content calendars with
+                  confidence.
+                </p>
+              </div>
+              <div class="case-block">
+                <h4>Goal</h4>
+                <p>
+                  Create a dependable shoot-to-edit pipeline that delivers
+                  cinematic, on-brand video within tight social media turnaround
+                  windows.
+                </p>
+              </div>
+              <div class="case-block">
+                <h4>My Role</h4>
+                <p>
+                  Founder &amp; Creative Director - shooter, editor, and process
+                  owner.
+                </p>
+              </div>
+              <div class="case-block">
+                <h4>Technologies</h4>
+                <div class="tag-row">
+                  <span class="tag">Sony A7RII</span
+                  ><span class="tag">DJI Ronin-SC2</span
+                  ><span class="tag">CapCut Pro</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-narrative">
+              <h4>Process</h4>
+              <p>
+                Shot every project on a Sony A7RII paired with a DJI Ronin-SC2
+                gimbal for stabilized, cinematic movement, then edited and
+                exported everything in CapCut Pro using platform-specific
+                presets for each format.
+              </p>
+              <h4>Challenges</h4>
+              <p>
+                Tight deadlines and multiple format requirements - stories,
+                reels, and ads - meant footage had to be reusable across very
+                different aspect ratios and lengths.
+              </p>
+              <h4>Solution</h4>
+              <p>
+                Shot with multi-format reuse in mind from the start, then used
+                CapCut Pro’s export presets to move from a single edit straight
+                to platform-ready versions for stories, reels, and ads.
+              </p>
+            </div>
+            <div class="case-outcomes">
+              <h4>Measurable Outcomes</h4>
+              <div class="outcome-grid">
+                <div
+                  class="outcome-card stat kpi reveal"
+                  data-count="77"
+                  data-suffix="%"
+                >
+                  <span class="kpi-number">0</span
+                  ><span class="outcome-label"
+                    >Increase in Airbnb search-to-listing click-through rate
+                    (18.91% → 33.55%), driven in part by professional
+                    photography &amp; listing optimization</span
+                  >
+                </div>
+                <div
+                  class="outcome-card stat kpi reveal"
+                  data-count="18"
+                  data-suffix=""
+                >
+                  <span class="kpi-number">0</span
+                  ><span class="outcome-label"
+                    >Post FIFA World Cup 2026 campaign produced end-to-end
+                    across Meta Ads &amp; organic social</span
+                  >
+                </div>
+                <div
+                  class="outcome-card stat kpi reveal"
+                  data-count="10"
+                  data-suffix="-page"
+                >
+                  <span class="kpi-number">0</span
+                  ><span class="outcome-label"
+                    >Branded property guidebook designed and produced for client
+                    listings</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="case-lessons">
+              <h4>Lessons Learned</h4>
+              <p>
+                Planning for reuse during the shoot saves far more time in
+                editing than trying to fix format problems after the fact.
+              </p>
+            </div>
+          </article>
+          <article class="case-study reveal" id="case-study-3">
+            <div class="case-header">
+              <span class="case-number">03</span>
+              <div>
+                <h3>AI-Assisted Content Workflows</h3>
+                <p class="case-tagline">
+                  Using AI as an amplifier for creative work, not a replacement
+                  for it.
+                </p>
+              </div>
+            </div>
+            <div class="case-grid">
+              <div class="case-block">
+                <h4>Problem</h4>
+                <p>
+                  Ideation and first-draft writing for client content calendars
+                  took up creative hours that could be spent refining ideas
+                  instead of generating them from scratch.
+                </p>
+              </div>
+              <div class="case-block">
+                <h4>Goal</h4>
+                <p>
+                  Integrate AI tools responsibly into the content and voice
+                  workflow to speed up drafting while keeping every brand's
+                  voice authentic and consistent.
+                </p>
+              </div>
+              <div class="case-block">
+                <h4>My Role</h4>
+                <p>
+                  Founder &amp; Creative Director - designed the workflow and
+                  prompt approach, reviewed and edited every output.
+                </p>
+              </div>
+              <div class="case-block">
+                <h4>Technologies</h4>
+                <div class="tag-row">
+                  <span class="tag">Claude API (Anthropic)</span
+                  ><span class="tag">ChatGPT</span
+                  ><span class="tag">ElevenLabs</span
+                  ><span class="tag">Metricool</span
+                  ><span class="tag">CapCut Pro</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-narrative">
+              <h4>Process</h4>
+              <p>
+                Built brand voice guidelines for each client, used Claude API
+                and ChatGPT for first-draft copy and ideation, ElevenLabs for
+                AI-assisted voiceover on video content, then scheduled
+                everything through Metricool with a human review step before
+                anything shipped.
+              </p>
+              <h4>Challenges</h4>
+              <p>
+                Generic AI output was the biggest risk - without careful
+                prompting, drafts and voiceovers felt the same across different
+                brands.
+              </p>
+              <h4>Solution</h4>
+              <p>
+                Paired detailed brand-voice prompts with a consistent editing
+                checklist across every AI tool in the stack, so AI-assisted
+                drafts and voiceovers still sounded distinctly on-brand before
+                publishing.
+              </p>
+            </div>
+            <div class="case-outcomes">
+              <h4>Measurable Outcomes</h4>
+              <div class="outcome-grid">
+                <div
+                  class="outcome-card stat kpi reveal"
+                  data-count="48"
+                  data-suffix="%"
+                >
+                  <span class="kpi-number">0</span
+                  ><span class="outcome-label"
+                    >Reduction in client average booking lead time (27.7 → 14.5
+                    days) during this workflow period</span
+                  >
+                </div>
+                <div
+                  class="outcome-card stat kpi reveal"
+                  data-count="10"
+                  data-suffix="-slide"
+                >
+                  <span class="kpi-number">0</span
+                  ><span class="outcome-label"
+                    >Performance analysis deck with a full SWOT analysis &amp;
+                    90-day growth roadmap, drafted with AI assistance</span
+                  >
+                </div>
+                <div
+                  class="outcome-card stat kpi reveal"
+                  data-count="58"
+                  data-suffix="x"
+                >
+                  <span class="kpi-number">0</span
+                  ><span class="outcome-label"
+                    >Return on ad spend (ROAS) on a $48 Meta Ads launch-day
+                    campaign from the same engagement</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="case-lessons">
+              <h4>Lessons Learned</h4>
+              <p>
+                AI speeds up the blank page problem, but brand voice and final
+                judgment still have to come from a human who knows the client.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="resume-section" id="resume">
+        <div class="container resume-inner reveal">
+          <p class="section-eyebrow center">Resume</p>
+          <h2 class="center">Let's talk about what's next.</h2>
+          <p class="center resume-sub">
+            Get a copy of my resume, or reach out directly - I'm open to hybrid,
+            remote, and freelance-to-full-time roles.
+          </p>
+          <div class="hero-actions center">
+            <a
+              href="mailto:prestorge@gmail.com?subject=Resume%20Request"
+              class="btn btn-primary"
+              >Email Me for My Resume</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container contact-inner reveal">
+          <p class="section-eyebrow center">Contact</p>
+          <h2 class="center">Let's build something worth measuring.</h2>
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:prestorge@gmail.com"
+              ><span class="contact-label">Email</span
+              ><span class="contact-value">prestorge@gmail.com</span></a
+            ><a class="contact-card" href="tel:+17866679561"
+              ><span class="contact-label">Phone</span
+              ><span class="contact-value">(786) 667-9561</span></a
+            ><a
+              class="contact-card"
+              href="https://www.linkedin.com/in/kgeorges2k3"
+              target="_blank"
+              rel="noopener"
+              ><span class="contact-label">LinkedIn</span
+              ><span class="contact-value">linkedin.com/in/kgeorges2k3</span></a
+            ><a
+              class="contact-card"
+              href="https://curatemediallc.com"
+              target="_blank"
+              rel="noopener"
+              ><span class="contact-label">Website</span
+              ><span class="contact-value">curatemediallc.com</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>&copy; 2026 Kyle Georges. Built with care in Miami, FL.</span>
+      </div>
+    </footer>
+  </body>
+</html>
