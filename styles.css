@@ -366,14 +366,11 @@ section {
   background: linear-gradient(135deg, var(--gray-bg), #dfe7ee);
 }
 .media-1 {
-  background: linear-gradient(135deg, #e8f2fd, #b8dcff);
-}
+  background: #C9A84C;}
 .media-2 {
-  background: linear-gradient(135deg, #fdeee8, #ffcdb8);
-}
+  background: #0D0D0D;}
 .media-3 {
-  background: linear-gradient(135deg, #eee8fd, #d3c2ff);
-}
+  background: #F5F0E8;}
 .work-card-body {
   padding: 24px;
 }
