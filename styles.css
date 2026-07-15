@@ -654,11 +654,12 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  color: #C9A84C;
   display: inline-block;
 }
 
 .result-number {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.03em;
@@ -666,21 +667,22 @@ section {
 }
 
 .result-sublabel {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(201,168,76,0.7);
-  margin-top: 2px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: rgba(255,255,255,0.9);
+  margin-top: 6px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
 }
 
 .result-label {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: rgba(255,255,255,0.4);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   line-height: 1.5;
-  max-width: 130px;
-  margin-top: 2px;
+  max-width: 150px;
+  margin-top: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
 }
 
 .result-divider {
