@@ -635,7 +635,7 @@ section {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -656,13 +656,17 @@ section {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: #C9A84C;
-  display: inline-block;
+  display: block;
 }
 
 .result-number {
   font-size: 4rem;
   font-weight: 800;
   line-height: 1;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   letter-spacing: -0.03em;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
 }
