@@ -614,10 +614,20 @@ section {
 
 /* ── RESULTS STRIP ── */
 .results-strip {
-  background: #111;
-  padding: 0;
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
+  background: #0D0D0D;
+  padding: 56px 40px 52px;
+  border-top: 1px solid rgba(201,168,76,0.15);
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+  text-align: center;
+}
+
+.results-eyebrow {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 40px;
 }
 
 .results-inner {
@@ -634,41 +644,64 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 36px 24px;
+  padding: 0 32px;
   text-align: center;
-  gap: 8px;
+  gap: 6px;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #C9A84C 0%, #F5EDD6 40%, #C9A84C 70%, #8B6914 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
 }
 
 .result-number {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: #2563eb;
+  font-size: 3.5rem;
+  font-weight: 800;
   line-height: 1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+}
+
+.result-sublabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(201,168,76,0.7);
+  margin-top: 2px;
 }
 
 .result-label {
-  font-size: 0.78rem;
-  color: rgba(255,255,255,0.55);
-  letter-spacing: 0.04em;
-  line-height: 1.4;
-  max-width: 140px;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  max-width: 130px;
+  margin-top: 2px;
 }
 
 .result-divider {
   width: 1px;
-  background: #2a2a2a;
+  background: linear-gradient(to bottom, transparent, rgba(201,168,76,0.25), transparent);
   align-self: stretch;
-  margin: 20px 0;
+  min-height: 80px;
+  margin: 0 8px;
 }
 
 @media (max-width: 600px) {
+  .results-strip {
+    padding: 40px 20px;
+  }
   .results-inner {
     flex-wrap: wrap;
+    gap: 32px 0;
   }
   .result-item {
     flex: 0 0 50%;
-    padding: 24px 16px;
+    padding: 0 16px;
   }
   .result-divider {
     display: none;
